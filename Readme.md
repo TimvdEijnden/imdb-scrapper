@@ -1,4 +1,4 @@
-# IMDB Scrapper
+# IMDB Scrpper
 
 This is one stop tool/lib for getting any type of data from IMDB website. For instance, you can get cast(s) of a movie or awards won by that movie and some of it's basic information. All the images function provides images with title and poster of high quality.
 Every function in this lib is asynchronous, they all return a promise. The module is made to be modular for different functions. It provides many functions:
@@ -9,13 +9,14 @@ Every function in this lib is asynchronous, they all return a promise. The modul
 4.  `getFull(id)`: `id` refers to IMDBID like _tt1825683_. This function is the amalgamation of above three. And its configurations are set to default.
 5.  For making a get request use **request**
 6.  `getActor(id)` : to get detail of the actor id is the actor id like _nm43124_.This function provide basic info about the actor like name ,birthdate, image etc
-7.  `searchActor(term)`:This function provide the serach functionality for actors
+7.  `searchActor(term)`:This function provide the search functionality for actors
 8.  `episodePage(id,seasonNumber)`:the season no. is the season which is required
 9.  `simpleSearch(term)` :This provide a fast way to get autocomplete suggestions .Under the hood it uses the imdb api for result.No scrapping is involved in the process.
-10. `serach(term)` : This provide api to serach for `term` using scrapping.
+10. `search(term)` : This provide api to search for `term` using scrapping.
 11. `getTrendingGenre(genre,n), getTrending(n,type)`:get movies trending based on `genre` or `type =['tv','movies']`.
 12. `getStarsBornToday(),getStarsBorn(date)`:gives the stars born on `date` or today.
 13. `changeQuality(url,n)` a function to change the quality of image in `url` based on the scale of _0-5_ n specify the scale .
+13. `getTop(n, type)` a function get the top movies or tv shows
 
 ### Check test.js for example of allmost very function usage and returned data ;)
 

@@ -4,8 +4,6 @@ const {
   getTrending,
   search,
   getFull,
-  getStarsByBornDay,
-  getStarsBornToday,
   awardsPage,
   episodesPage,
   getCast,
@@ -13,7 +11,7 @@ const {
   searchActor,
   simpleSearch,
   getUpcoming,
-  changeQuality
+  getTop
 } = require("./index");
 
 const jobs = excuteMe => [
@@ -62,6 +60,10 @@ const jobs = excuteMe => [
 
   getUpcoming(20).then(val => {
     return excuteMe("getUpcoming-20", val);
+  }),
+
+  getTop(10).then(val => {
+    return excuteMe("getTop-10", val);
   })
 ];
 

@@ -1,6 +1,6 @@
 {
-  "name": "imdb-scrapper",
-  "version": "2.3.1",
+  "name": "@timvdeijnden/imdb-scraper",
+  "version": "1.0.0",
   "description": "scrap data from imdb web site",
   "main": "index.js",
   "scripts": {
@@ -17,13 +17,13 @@
     "trending",
     "tv show"
   ],
-  "repository": "git+https://github.com/hack-throne/imdb-scrapper.git",
-  "author": "hack-throne",
+  "repository": "git+https://github.com/timvdeijnden/imdb-scraper.git",
+  "author": "Tim van den Eijnden",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hack-throne/imdb-scrapper/issues"
+    "url": "https://github.com/timvdeijnden/imdb-scraper/issues"
   },
-  "homepage": "https://github.com/hack-throne/imdb-scrapper#readme",
+  "homepage": "https://github.com/timvdeijnden/imdb-scraper#readme",
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
     "d3-time-format": "^2.2.3"

@@ -32,6 +32,7 @@ const {
   getSimilarMoviesById
 } = require("./lib/data");
 const { getTrending, getTrendingGenre } = require("./lib/trending"); // provide trending functions
+const { getTop  } = require("./lib/top"); // provide top functions
 const { search, searchActor, simpleSearch } = require("./lib/search"); // provide search functions
 const { getUpcoming } = require("./lib/upcoming"); // provide upcoming movies
 const { getActorData } = require("./lib/actor");
@@ -181,5 +182,6 @@ module.exports = {
   changeQuality,
   options,
   clearCache,
-  stopCacheClear
+  stopCacheClear,
+  getTop
 };
