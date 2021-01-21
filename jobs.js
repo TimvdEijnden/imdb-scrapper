@@ -11,7 +11,10 @@ const {
   searchActor,
   simpleSearch,
   getUpcoming,
-  getTop
+  getTop,
+  getComingSoon,
+  getInTheaters,
+  getWhatsOnTV
 } = require("./index");
 
 const jobs = excuteMe => [
@@ -64,7 +67,35 @@ const jobs = excuteMe => [
 
   getTop(10).then(val => {
     return excuteMe("getTop-10", val);
-  })
+  }),
+
+  getComingSoon(10).then(val => {
+    return excuteMe("getComingSoon", val);
+  }),
+
+  getInTheaters(10).then(val => {
+    return excuteMe("getInTheaters", val);
+  }),
+
+  getWhatsOnTV(10, 'netflix').then(val => {
+    return excuteMe("getWhatsOnTV-10-'netflix'", val);
+  }),
+
+  getWhatsOnTV(10, 'prime').then(val => {
+    return excuteMe("getWhatsOnTV-10-'prime", val);
+  }),
+
+  getWhatsOnTV(10, 'disney').then(val => {
+    return excuteMe("getWhatsOnTV-10-'disney", val);
+  }),
+
+  getWhatsOnTV(10, 'hbomax').then(val => {
+    return excuteMe("getWhatsOnTV-10-'hbomax", val);
+  }),
+
+  getWhatsOnTV(10, 'hulu').then(val => {
+    return excuteMe("getWhatsOnTV-10-'hulu", val);
+  }),
 ];
 
 module.exports = jobs;

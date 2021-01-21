@@ -18,8 +18,8 @@ if (!fs.existsSync(__folderPath)) {
     childProcess.spawnSync("rm", ["-rf", `${__dirname}/output`]);
     fs.mkdirSync(__folderPath);
   } else {
-    console.warn("please remove output folder");
-    process.exit(1);
+    // console.warn("please remove output folder");
+    // process.exit(1);
   }
 }
 // main content of the file

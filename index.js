@@ -36,6 +36,9 @@ const { getTop  } = require("./lib/top"); // provide top functions
 const { search, searchActor, simpleSearch } = require("./lib/search"); // provide search functions
 const { getUpcoming } = require("./lib/upcoming"); // provide upcoming movies
 const { getActorData } = require("./lib/actor");
+const { getComingSoon } = require("./lib/comingSoon");
+const { getInTheaters } = require("./lib/inTheaters");
+const { getWhatsOnTV } = require("./lib/whatsOnTV");
 
 const getMonthDay = d3TimeFormat("%m-%d");
 const BASE_URL = "https://www.imdb.com";
@@ -183,5 +186,8 @@ module.exports = {
   options,
   clearCache,
   stopCacheClear,
-  getTop
+  getTop,
+  getComingSoon,
+  getInTheaters,
+  getWhatsOnTV
 };
